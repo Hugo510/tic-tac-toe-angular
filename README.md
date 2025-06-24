@@ -5,6 +5,13 @@ Una aplicación estática moderna de Tic Tac Toe desarrollada con **Angular 20**
 ![Angular](https://img.shields.io/badge/Angular-20.0.0-red?style=flat-square&logo=angular)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue?style=flat-square&logo=typescript)
 ![CSS3](https://img.shields.io/badge/CSS3-Responsive-1572B6?style=flat-square&logo=css3)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-brightgreen?style=flat-square&logo=github)
+
+## 🌐 Demo en Vivo
+
+🎯 **Juega ahora:** [https://hugo510.github.io/tic-tac-toe-angular/](https://hugo510.github.io/tic-tac-toe-angular/)
+
+> La aplicación se actualiza automáticamente con cada cambio usando GitHub Actions + GitHub Pages
 
 ## ✨ Características
 
@@ -217,22 +224,39 @@ npx prettier --write "src/**/*.{ts,html,css}"
 
 ## 🚀 Despliegue
 
-### Build de Producción
+### 🤖 Deployment Automático (GitHub Pages + Actions)
+
+Este proyecto se despliega automáticamente usando **GitHub Actions** cada vez que se hace push a la rama `main`.
+
+- 🔄 **Proceso automático**: Build, test y deploy sin intervención manual
+- 🌐 **URL en vivo**: [https://hugo510.github.io/tic-tac-toe-angular/](https://hugo510.github.io/tic-tac-toe-angular/)
+- ⚡ **Actualización instantánea**: Los cambios se reflejan en minutos
+- 🧪 **Testing incluido**: Solo se despliega si pasan todos los tests
+
+#### Workflow del deployment:
+1. 📥 **Checkout** del código
+2. 🟢 **Setup** de Node.js 20
+3. 📦 **Instalación** de dependencias
+4. 🧪 **Ejecución** de tests
+5. 🏗️ **Build** de producción
+6. 🚀 **Deploy** a GitHub Pages
+
+### 🛠️ Build Local de Producción
 
 ```bash
-# Generar build optimizado
-npm run build
+# Generar build optimizado para GitHub Pages
+npm run build:prod
 
-# Los archivos se generarán en dist/tic-tac-toe/
-# Servir archivos estáticos desde ese directorio
+# Los archivos se generarán en dist/tic-tac-toe-angular/
+# Incluye configuración correcta de base-href
 ```
 
-### Opciones de Hosting
+### 🌐 Otras Opciones de Hosting
 
-- **GitHub Pages:** Perfecto para proyectos estáticos
-- **Netlify:** Deploy automático desde repositorio
-- **Vercel:** Optimizado para aplicaciones frontend
-- **Firebase Hosting:** Hosting gratuito de Google
+- ✅ **GitHub Pages:** ¡Ya configurado con Actions!
+- 🔵 **Netlify:** Deploy automático desde repositorio
+- ⚫ **Vercel:** Optimizado para aplicaciones frontend
+- 🔥 **Firebase Hosting:** Hosting gratuito de Google
 
 ## 🤝 Contribución
 
