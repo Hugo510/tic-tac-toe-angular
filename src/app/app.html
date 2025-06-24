@@ -1,0 +1,44 @@
+<div class="game-container">
+  <header class="game-header">
+    <h1>{{ title }}</h1>
+    <div class="game-status">
+      @if (!gameOver) {
+      <p class="current-player">
+        Turno del jugador:
+        <span class="player-highlight">{{ currentPlayer }}</span>
+      </p>
+      } @else {
+      <p class="game-result">
+        @if (winner === 'Empate') {
+        <span class="tie">¡Es un empate! 🤝</span>
+        } @else {
+        <span class="winner">¡Ganador: {{ winner }}! 🎉</span>
+        }
+      </p>
+      }
+    </div>
+  </header>
+
+  <main class="game-board">
+    <div class="board">
+      @for (cell of board; track $index) {
+      <button
+        class="cell"
+        [class.x]="cell === 'X'"
+        [class.o]="cell === 'O'"
+        [class.disabled]="cell !== null || gameOver"
+        (click)="makeMove($index)"
+        type="button"
+      >
+        {{ cell }}
+      </button>
+      }
+    </div>
+  </main>
+
+  <footer class="game-controls">
+    <button class="reset-btn" (click)="resetGame()" type="button">
+      🔄 Nuevo Juego
+    </button>
+  </footer>
+</div>

@@ -1,0 +1,41 @@
+{
+  // Configuración de TypeScript
+  "typescript.preferences.preference": "non-relative",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Configuración de Angular
+  "angular.enable-strict-mode-prompt": false,
+
+  // Configuración de archivos
+  "files.associations": {
+    "*.html": "html",
+    "*.component.html": "html"
+  },
+
+  // Configuración de formato
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
+  // Configuración de terminal
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  // Emmet para Angular
+  "emmet.includeLanguages": {
+    "typescript": "html",
+    "javascript": "html"
+  },
+
+  // Configuración de CSS
+  "css.validate": true,
+  "scss.validate": true,
+
+  // Live Server para testing local
+  "liveServer.settings.port": 3000,
+
+  // Git
+  "git.enableSmartCommit": true,
+  "git.autofetch": true
+}
