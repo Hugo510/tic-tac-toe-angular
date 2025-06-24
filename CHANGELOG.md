@@ -8,6 +8,7 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 ## [1.1.0] - 2025-06-23
 
 ### 🚀 Agregado
+
 - Configuración de GitHub Actions para deployment automático
 - Deployment automático a GitHub Pages con cada push
 - Workflow de CI/CD con testing incluido
@@ -16,6 +17,7 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 - Configuración de base-href para GitHub Pages
 
 ### 🔧 Cambiado
+
 - Actualizada documentación con información de deployment
 - Mejorado README con sección de demo en vivo
 - Optimizado build script para GitHub Pages

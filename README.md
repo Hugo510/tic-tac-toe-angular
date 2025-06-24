@@ -234,6 +234,7 @@ Este proyecto se despliega automáticamente usando **GitHub Actions** cada vez q
 - 🧪 **Testing incluido**: Solo se despliega si pasan todos los tests
 
 #### Workflow del deployment:
+
 1. 📥 **Checkout** del código
 2. 🟢 **Setup** de Node.js 20
 3. 📦 **Instalación** de dependencias
